@@ -7,19 +7,20 @@ import Container from 'components/Container';
 import { media } from 'utils/media';
 
 const PARTNER_LOGOS = [
-  'logoipsum-logo-1.svg',
-  'logoipsum-logo-2.svg',
-  'logoipsum-logo-3.svg',
-  'logoipsum-logo-4.svg',
-  'logoipsum-logo-5.svg',
-  'logoipsum-logo-6.svg',
-  'logoipsum-logo-7.svg',
+  'Medfolio.svg',
+  'Coverflex.svg',
+  'SLYK.svg',
+  'Subvisual.svg',
+  'Anybrain.svg',
+  'Seegno.svg',
+  'Gumroad.svg',
+  'Channable.svg',
 ];
 
 export default function Partners() {
   return (
     <PartnersWrapper>
-      <Title>official partners with</Title>
+      <Title>Teams supercharging their pull request workflows</Title>
       <Swiper
         modules={[Autoplay]}
         slidesPerView={6}
