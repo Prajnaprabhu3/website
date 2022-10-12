@@ -7,6 +7,9 @@ import HeroIllustration from 'components/HeroIllustation';
 import OverTitle from 'components/OverTitle';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
+import React from 'react';
+import { SocialIcon } from 'react-social-icons';
+import Image from 'next/image';
 
 export default function Hero() {
   const { setIsModalOpened } = useNewsletterModalContext();
@@ -14,25 +17,32 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>the coolest, saas product you have ever seen</CustomOverTitle>
-        <Heading>Make your life easier with our SaaS</Heading>
+        <CustomOverTitle>The open source GitHub action for</CustomOverTitle>
+        <Heading>Pull Request Automation</Heading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
+        Automate manual tasks: labeling, reviewer assignment and merge
+        Enforce compliance rules and conventions: PR size, commit message, PR description, etc.
         </Description>
         <CustomButtonGroup>
-          <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
-          </Button>
-          <NextLink href="#whitepaper" passHref>
-            <Button transparent>
-              Features <span>&rarr;</span>
+          <NextLink href="https://github.com/reviewpad/action" passHref>
+            <Button>
+              Install
+              <SocialIcon bgColor="#00000000" fgColor="white" network="github"/>
+              reviewpad/action <span>↗︎</span>
             </Button>
           </NextLink>
         </CustomButtonGroup>
       </Contents>
       <ImageContainer>
-        <HeroIllustration />
+        <div>
+          <div>
+            I add your labels<br/>
+            I find your reviewers<br/>
+            I merge your code
+          </div>
+          <Image src="/Revie Robot.svg" height={400} width={400} />
+          {/* <HeroIllustration /> */}
+        </div>
       </ImageContainer>
     </HeroWrapper>
   );
@@ -67,6 +77,11 @@ const ImageContainer = styled.div`
   flex: 1;
   justify-content: flex-end;
   align-items: flex-start;
+  
+  text-align: center;
+  font-size: 1.8rem;
+  opacity: 0.8;
+  line-height: 1.3;
 
   svg {
     max-width: 45rem;
