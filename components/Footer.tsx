@@ -3,6 +3,10 @@ import { FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share';
 import styled from 'styled-components';
 import Container from 'components/Container';
 import { media } from 'utils/media';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { SocialIcon } from 'react-social-icons';
+
 
 type SingleFooterListItem = { title: string; href: string };
 type FooterListItems = SingleFooterListItem[];
@@ -57,25 +61,11 @@ export default function Footer() {
         </ListContainer>
         <BottomBar>
           <ShareBar>
-            <NextLink href="https://www.twitter.com/my-saas-startup" passHref>
-              <a>
-                <TwitterIcon size={50} round={true} />
-              </a>
-            </NextLink>
-
-            <NextLink href="https://www.facebook.com/my-saas-startup" passHref>
-              <a>
-                <FacebookIcon size={50} round={true} />
-              </a>
-            </NextLink>
-
-            <NextLink href="https://www.linkedin.com/my-saas-startup" passHref>
-              <a>
-                <LinkedinIcon size={50} round={true} />
-              </a>
-            </NextLink>
+            <SocialIcon bgColor="#00000000" fgColor="white" url="https://www.twitter.com/reviewpad" />
+            <SocialIcon bgColor="#00000000" fgColor="white" url="https://www.linkedin.com/company/reviewpad" />
+            <SocialIcon bgColor="#00000000" fgColor="white" url="https://github.com/reviewpad" />
           </ShareBar>
-          <Copyright>&copy; Copyright 2021 My Saas Startup</Copyright>
+          <Copyright>&copy; Copyright 2022 Reviewpad</Copyright>
         </BottomBar>
       </Container>
     </FooterWrapper>
