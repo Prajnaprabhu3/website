@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Container from 'components/Container';
 import { media } from 'utils/media';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
 
 
