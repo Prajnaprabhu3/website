@@ -10,6 +10,9 @@ import { media } from 'utils/media';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import Image from 'next/image';
+import { FaCheck } from 'react-icons/fa';
+import { IconContext } from "react-icons";
+<IconContext.Provider value={{ color: "white", size: "10px" }}><FaCheck /></IconContext.Provider>
 
 export default function Hero() {
   const { setIsModalOpened } = useNewsletterModalContext();
@@ -20,8 +23,8 @@ export default function Hero() {
         <CustomOverTitle>The open source GitHub action for</CustomOverTitle>
         <Heading>Pull Request Automation</Heading>
         <Description>
-        Automate manual tasks: labeling, reviewer assignment and merge
-        Enforce compliance rules and conventions: PR size, commit message, PR description, etc.
+        <IconContext.Provider value={{ color: "green", size: "15px" }}><FaCheck /></IconContext.Provider> <b>Automate manual tasks</b>: labeling, reviewer assignment and merge<br/>
+        <IconContext.Provider value={{ color: "green", size: "15px" }}><FaCheck /></IconContext.Provider> <b>Enforce compliance rules and conventions</b>: PR size, commit message, PR description, etc.
         </Description>
         <CustomButtonGroup>
           <NextLink href="https://github.com/reviewpad/action" passHref>
@@ -61,7 +64,7 @@ const HeroWrapper = styled(Container)`
 
 const Contents = styled.div`
   flex: 1;
-  max-width: 60rem;
+  max-width: 70rem;
 
   ${media('<=desktop')} {
     max-width: 100%;
