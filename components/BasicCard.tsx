@@ -1,18 +1,27 @@
 import NextImage from 'next/image';
 import styled from 'styled-components';
+import NextLink from 'next/link';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
 interface BasicCardProps {
   title: string;
   description: string;
   imageUrl: string;
+  link: string;
 }
 
-export default function BasicCard({ title, description, imageUrl }: BasicCardProps) {
+export default function BasicCard({ title, description, imageUrl, link }: BasicCardProps) {
   return (
     <Card>
       <NextImage src={imageUrl} width={128} height={128} alt={title} />
       <Title>{title}</Title>
       <Description>{description}</Description>
+      <NextLink href={link} passHref>
+              <a>
+                Read more <IconContext.Provider value={{ color: "black", size: "15px" }}><FaExternalLinkAlt /></IconContext.Provider>
+              </a>
+            </NextLink>
     </Card>
   );
 }
