@@ -5,6 +5,7 @@ import Container from 'components/Container';
 import { media } from 'utils/media';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
+import LogoWhite from './LogoWhite';
 
 
 type SingleFooterListItem = { title: string; href: string };
@@ -14,37 +15,26 @@ type FooterItems = SingleFooterList[];
 
 const footerItems: FooterItems = [
   {
+    title: 'Legal',
+    items: [
+      { title: 'Terms and Conditions', href: '/terms-and-conditions' },
+      { title: 'Privacy Policy', href: '/privacy-policy' },
+      { title: 'Legal Information', href: '/legal-information' },
+    ],
+  },
+  {
     title: 'Company',
     items: [
-      { title: 'Privacy Policy', href: '/privacy-policy' },
-      { title: 'Cookies Policy', href: '/cookies-policy' },
-    ],
-  },
-  {
-    title: 'Product',
-    items: [
-      { title: 'Features', href: '/features' },
-      { title: 'Something', href: '/something' },
-      { title: 'Something else', href: '/something-else' },
-      { title: 'And something else', href: '/and-something-else' },
-    ],
-  },
-  {
-    title: 'Knowledge',
-    items: [
       { title: 'Blog', href: '/blog' },
-      { title: 'Contact', href: '/contact' },
-      { title: 'FAQ', href: '/faq' },
-      { title: 'Help Center', href: '/help-center' },
+      { title: 'Aabout Us', href: '/about-us' },
+      { title: 'Press Kit', href: '/press-kit' },
     ],
   },
   {
-    title: 'Something',
+    title: 'Contact',
     items: [
-      { title: 'Features2', href: '/features2' },
-      { title: 'Something2', href: '/something2' },
-      { title: 'Something else2', href: '/something-else2' },
-      { title: 'And something else2', href: '/and-something-else2' },
+      { title: 'Contact Us', href: 'mailto:info@reviewpad.com' },
+      { title: 'Join Our Discord', href: '/discord' },
     ],
   },
 ];
@@ -54,6 +44,11 @@ export default function Footer() {
     <FooterWrapper>
       <Container>
         <ListContainer>
+        <NextLink href="/" passHref>
+          <LogoWrapper>
+            <LogoWhite />
+          </LogoWrapper>
+        </NextLink>
           {footerItems.map((singleItem) => (
             <FooterList key={singleItem.title} {...singleItem} />
           ))}
@@ -91,6 +86,14 @@ function ListItem({ title, href }: SingleFooterListItem) {
     </ListItemWrapper>
   );
 }
+
+const LogoWrapper = styled.a`
+  display: flex;
+  margin-right: 5rem;
+  text-decoration: none;
+
+  color: rgb(var(#FFFFFF));
+`;
 
 const FooterWrapper = styled.div`
   padding-top: 10rem;
