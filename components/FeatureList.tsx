@@ -71,6 +71,7 @@ const ContentContainer = styled.div`
 const FeatureListWrapper = styled(Container)`
   display: flex;
   // align-items: center;
+  margin-top: 20rem;
 
   ${ContentContainerLeft} {
     margin: 0 5rem 0 0;
