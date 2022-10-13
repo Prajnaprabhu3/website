@@ -21,6 +21,7 @@ import { NavItems } from 'types';
 
 const navItems: NavItems = [
   { title: 'Documentation', href: 'https://docs.reviewpad.com' },
+  { title: 'Discord', href: '/discord' },
   { title: 'About Us', href: '/about-us' },
   { title: 'Blog', href: '/blog' },
   // { title: 'Sign up', href: '/sign-up', outlined: true },
