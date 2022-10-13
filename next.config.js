@@ -28,3 +28,22 @@ module.exports = withBundleAnalyzer({
     return config;
   },
 });
+
+module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/discord',
+        destination: 'https://discord.com/invite/J4tJj3wfgF',
+        permanent: false,
+        basePath: false
+      },
+      {
+        source: '/press-kit',
+        destination: 'https://reviewpad.notion.site/Reviewpad-Press-Kit-22dde040bb8d4204922619bcd7d137c2',
+        permanent: false,
+        basePath: false
+      },
+    ]
+  },
+}
