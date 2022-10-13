@@ -6,32 +6,32 @@ const RichText = styled.div`
   opacity: 0.8;
   line-height: 1.6;
 
-  ol,
-  ul {
-    list-style: none;
-    padding: 0rem;
+  // ol,
+  // ul {
+  //   list-style: none;
+  //   padding: 0rem;
 
-    li {
-      padding-left: 2rem;
-      position: relative;
+  //   li {
+  //     padding-left: 2rem;
+  //     position: relative;
 
-      & > * {
-        display: inline-block;
-        vertical-align: top;
-      }
+  //     & > * {
+  //       display: inline-block;
+  //       vertical-align: top;
+  //     }
 
-      &::before {
-        position: absolute;
-        content: 'L';
-        left: 0;
-        top: 0;
-        text-align: center;
-        color: rgb(var(--primary));
-        font-family: arial;
-        transform: scaleX(-1) rotate(-35deg);
-      }
-    }
-  }
+  //     &::before {
+  //       position: absolute;
+  //       content: 'L';
+  //       left: 0;
+  //       top: 0;
+  //       text-align: center;
+  //       color: rgb(var(--primary));
+  //       font-family: arial;
+  //       transform: scaleX(-1) rotate(-35deg);
+  //     }
+  //   }
+  // }
 
   table {
     border-collapse: collapse;
@@ -58,6 +58,20 @@ const RichText = styled.div`
   ${media('<=desktop')} {
     font-size: 1.5rem;
   }
-`;
 
+  /* Add margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 1em 0 1em 0;
+  }
+
+`;
 export default RichText;
