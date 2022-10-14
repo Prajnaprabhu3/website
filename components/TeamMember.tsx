@@ -26,9 +26,9 @@ export default function TeamMember({ imageUrl, name, position, socialTwitter, so
               <MemberName>{name}</MemberName>
               <MemberPosition>{position}</MemberPosition>
               <ShareBar>
-                {socialGithub && <SocialIcon bgColor="#00000000" fgColor="black" style={{ height: 30, width: 30 }} url={socialGithub} />}
-                {socialTwitter && <SocialIcon bgColor="#00000000" fgColor="black" style={{ height: 30, width: 30 }} url={socialTwitter} />}
-                {socialLinkedin && <SocialIcon bgColor="#00000000" fgColor="black" style={{ height: 30, width: 30 }} url={socialLinkedin} />}
+                {socialGithub && <SocialIcon bgColor="#00000000" fgColor="black" style={{ height: 30, width: 30 }} target="_blank" url={socialGithub} />}
+                {socialTwitter && <SocialIcon bgColor="#00000000" fgColor="black" style={{ height: 30, width: 30 }} target="_blank" url={socialTwitter} />}
+                {socialLinkedin && <SocialIcon bgColor="#00000000" fgColor="black" style={{ height: 30, width: 30 }} target="_blank" url={socialLinkedin} />}
               </ShareBar>
             </MemberContent>
     </MemberContainer>

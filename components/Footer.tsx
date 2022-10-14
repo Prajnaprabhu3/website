@@ -55,9 +55,9 @@ export default function Footer() {
         </ListContainer>
         <BottomBar>
           <ShareBar>
-            <SocialIcon bgColor="#00000000" fgColor="white" url="https://www.twitter.com/reviewpad" />
-            <SocialIcon bgColor="#00000000" fgColor="white" url="https://www.linkedin.com/company/reviewpad" />
-            <SocialIcon bgColor="#00000000" fgColor="white" url="https://github.com/reviewpad" />
+            <SocialIcon bgColor="#00000000" fgColor="white" target="_blank" url="https://www.twitter.com/reviewpad" />
+            <SocialIcon bgColor="#00000000" fgColor="white" target="_blank" url="https://www.linkedin.com/company/reviewpad" />
+            <SocialIcon bgColor="#00000000" fgColor="white" target="_blank" url="https://github.com/reviewpad" />
           </ShareBar>
           <Copyright>&copy; Copyright 2022 Reviewpad</Copyright>
         </BottomBar>
