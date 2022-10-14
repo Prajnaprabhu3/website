@@ -6,7 +6,7 @@ import RichText from 'components/RichText';
 export default function ContactPage() {
   return (
     <Page title="Legal information">
-      <PrivacyPolicyContainer>
+      <LegalInformationContainer>
         <RichText>
 
         <Logo />
@@ -27,12 +27,12 @@ export default function ContactPage() {
 
         <p>PT515697940</p>
         </RichText>
-      </PrivacyPolicyContainer>
+      </LegalInformationContainer>
     </Page>
   );
 }
 
-const PrivacyPolicyContainer = styled.div`
+const LegalInformationContainer = styled.div`
   max-width: 90rem;
   margin: auto;
   overflow-x: auto;

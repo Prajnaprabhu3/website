@@ -5,7 +5,7 @@ import RichText from 'components/RichText';
 export default function ContactPage() {
   return (
     <Page title="Terms and conditions">
-      <PrivacyPolicyContainer>
+      <TermsAndConditionsContainer>
         <RichText>
         <p>Last updated: May 03, 2021</p>
 
@@ -229,12 +229,12 @@ export default function ContactPage() {
 
         <ul><li>By email: info@explore.dev</li></ul>
         </RichText>
-      </PrivacyPolicyContainer>
+      </TermsAndConditionsContainer>
     </Page>
   );
 }
 
-const PrivacyPolicyContainer = styled.div`
+const TermsAndConditionsContainer = styled.div`
   max-width: 90rem;
   margin: auto;
   overflow-x: auto;
