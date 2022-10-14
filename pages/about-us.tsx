@@ -65,6 +65,13 @@ export default function ContactPage() {
             socialTwitter='https://twitter.com/FreddyMallet'
             socialLinkedin='https://www.linkedin.com/in/freddymallet/'
           />
+          <TeamMember
+            imageUrl='/Portrait-Simon-Brandhof.jpg' 
+            name='Simon Brandhof'
+            position='Advisor'
+            socialTwitter='https://twitter.com/simonbrandhof'
+            socialLinkedin='https://www.linkedin.com/in/simonbrandhof/'
+          />
         </TeamContainer>
       </AboutUsContainer>
     </Page>
@@ -81,6 +88,6 @@ const TeamContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: top;
   justify-content: center;
 `;
