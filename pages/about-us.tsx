@@ -90,4 +90,5 @@ const TeamContainer = styled.div`
   flex-wrap: wrap;
   align-items: top;
   justify-content: center;
+  gap: 30px 20px;
 `;

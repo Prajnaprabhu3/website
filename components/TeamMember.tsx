@@ -46,7 +46,7 @@ const MemberContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 200px;
-  margin: 30px 10px;
+  margin: 5px 5px;
 `;
 
 const MemberContent = styled.div`
