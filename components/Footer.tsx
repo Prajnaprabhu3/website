@@ -26,7 +26,7 @@ const footerItems: FooterItems = [
     title: 'Company',
     items: [
       { title: 'Blog', href: '/blog' },
-      { title: 'Aabout Us', href: '/about-us' },
+      { title: 'About Us', href: '/about-us' },
       { title: 'Press Kit', href: '/press-kit' },
     ],
   },
