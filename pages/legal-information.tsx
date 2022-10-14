@@ -1,7 +1,7 @@
 import styled from 'styled-components';
+import Logo from 'components/Logo'
 import Page from 'components/Page';
 import RichText from 'components/RichText';
-import Logo from 'components/Logo.tsx'
 
 export default function ContactPage() {
   return (
@@ -10,7 +10,7 @@ export default function ContactPage() {
         <RichText>
 
         <Logo />
-        
+
         <h3>Brand name</h3>
 
         <p>Reviewpad</p>
