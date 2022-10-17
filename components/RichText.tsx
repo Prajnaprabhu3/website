@@ -60,17 +60,31 @@ const RichText = styled.div`
   }
 
   /* Add margin */
+
+  h1 {
+    margin: 2em 0 0em 0;
+  }
+
+  h2 {
+    margin: 1.75em 0 0em 0;
+  }
+
+  h3 {
+    margin: 1.5em 0 0em 0;
+  }
+
+  h4 {
+    margin: 1.25em 0 0em 0;
+  }
+
+
   body,
-  h1,
-  h2,
-  h3,
-  h4,
   p,
   figure,
   blockquote,
   dl,
   dd {
-    margin: 1em 0 1em 0;
+    margin: 0.75em 0;
   }
 
 `;

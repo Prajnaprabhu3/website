@@ -20,6 +20,8 @@ export default function ContactPage() {
           <p>We are building a code review solution to help developers easily understand and review code written by others. This involves a significant shift from code reviews based on textual differences over files to what we call semantic code reviews. Semantic code reviews allow teams to move faster, consume fewer resources and increase the quality of their codebases.</p>
 
           <h1>Meet our team</h1>
+          <p>Founded in late 2019, Reviewpad is based in Oporto, Portugal.</p>
+          <br/>
         </RichText>
         <TeamContainer>
           <TeamMember
