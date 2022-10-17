@@ -2,14 +2,14 @@ import { InferGetStaticPropsType } from 'next';
 import styled from 'styled-components';
 import ArticleCard from 'components/ArticleCard';
 import AutofitGrid from 'components/AutofitGrid';
-import Page from 'components/Page';
+import PageWithoutTitle from 'components/PageWithoutTitle';
 import { media } from 'utils/media';
 import { getAllPosts } from 'utils/postsFetcher';
 
 export default function BlogIndexPage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <Page
-      title="My SaaS Startup Blog"
+    <PageWithoutTitle
+      title="Reviewpad Blog"
       description="Culpa duis reprehenderit in ex amet cillum nulla do in enim commodo. Sunt ut excepteur et est aliqua anim ea excepteur fugiat voluptate. Fugiat exercitation dolore laboris do quis consectetur eiusmod tempor consequat."
     >
       <CustomAutofitGrid>
@@ -23,7 +23,7 @@ export default function BlogIndexPage({ posts }: InferGetStaticPropsType<typeof 
           />
         ))}
       </CustomAutofitGrid>
-    </Page>
+    </PageWithoutTitle>
   );
 }
 
