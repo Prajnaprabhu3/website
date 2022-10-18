@@ -1,8 +1,6 @@
-import NextImage from 'next/image';
 import styled from 'styled-components';
 import Page from 'components/Page';
 import RichText from 'components/RichText';
-import { SocialIcon } from 'react-social-icons';
 import TeamMember from 'components/TeamMember';
 
 export default function ContactPage() {

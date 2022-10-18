@@ -1,10 +1,7 @@
 import NextImage from 'next/image';
 import React, { PropsWithChildren } from 'react';
-import styled from 'styled-components';
-import { media } from 'utils/media';
-import Container from './Container';
-import RichText from './RichText';
 import { SocialIcon } from 'react-social-icons';
+import styled from 'styled-components';
 
 export interface TeamMemberProps {
   imageUrl: string;
