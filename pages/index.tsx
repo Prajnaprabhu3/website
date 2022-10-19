@@ -3,6 +3,7 @@ import Head from 'next/head';
 import styled from 'styled-components';
 import FeatureList from 'components/FeatureList';
 import { EnvVars } from 'env';
+import { media } from 'utils/media';
 import { getAllPosts } from 'utils/postsFetcher';
 import Hero from 'views/HomePage/Hero';
 import Partners from 'views/HomePage/Partners';
